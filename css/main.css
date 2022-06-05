@@ -1,3 +1,66 @@
 @import "reset.css";
 @import "color.css";
 @import "font.css";
+
+body {
+	text-align: center;
+	font-size: var(--text-size-4);
+}
+
+header {
+	width: 37.5rem;
+
+	margin: 4.1rem auto 0 auto;
+	padding: 0 2rem;
+}
+
+h1 {
+	font-size: var(--text-size-1);
+	color: var(--headline);
+	line-height: 130%;
+
+	margin-bottom: 2.4rem;
+}
+
+h4 {
+	font-size: var(--text-size-5);
+	color: var(--primary-color);
+	margin-bottom: 1.6rem;
+}
+
+p {
+	font-size: var(--text-size-3);
+	line-height: 150%;
+	font-weight: 400;
+	color: var(--paragraph);
+
+	margin-bottom: 3.2rem;
+}
+
+button {
+	background-color: var(--primary-color);
+
+	border: none;
+	border-radius: 4rem;
+
+	margin-bottom: 6rem;
+
+	height: 6.2rem;
+	width: 26.3rem;
+
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: var(--text-size-5);
+	font-weight: 700;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.6rem;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+button i {
+	font-size: var(--text-size-2);
+}
