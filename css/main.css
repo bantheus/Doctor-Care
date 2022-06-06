@@ -147,6 +147,12 @@ nav.scroll svg:nth-child(2) path {
 	stroke: #ffffff;
 }
 
+nav button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
 /*---MENU EXPANDED---*/
 .menu,
 .close-menu,
@@ -165,6 +171,10 @@ body.menu-expanded {
 	overflow: hidden;
 }
 
+body.menu-expanded > :not(nav) {
+	display: none;
+}
+
 body.menu-expanded .menu {
 	position: fixed;
 	top: 0;
@@ -173,6 +183,8 @@ body.menu-expanded .menu {
 
 	width: 100vw;
 	height: 100vh;
+
+	padding-top: var(--nav-height);
 }
 
 body.menu-expanded nav {
@@ -220,4 +232,18 @@ body.menu-expanded nav {
 .social-links i {
 	font-size: var(--font-size-2);
 	color: #ffffff;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded nav button {
+	position: relative;
+	z-index: 100;
+}
+
+body.menu-expanded .logo path {
+	fill: #ffffff;
+}
+
+body.menu-expanded button path {
+	stroke: #ffffff;
 }
