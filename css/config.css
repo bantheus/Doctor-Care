@@ -12,6 +12,8 @@ body {
 body {
 	text-align: center;
 	font-size: var(--font-size-4);
+
+	overflow: overlay;
 }
 
 ul {
